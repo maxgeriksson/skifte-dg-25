@@ -1,10 +1,10 @@
-/* General body styles */
+
 body {
     margin: 0;
     padding: 0;
 }
 
-/* Banner styles */
+
 .banner {
     background-color: rgba(247, 3, 137, 0.6);
     color: rgb(243, 210, 26);
@@ -50,7 +50,7 @@ body {
 .slider {
     position: relative;
     width: 1000%;
-    animation: animate 40s linear infinite;
+    animation: animate 50s linear infinite;
 }
 
 .slide {
@@ -80,7 +80,7 @@ h1 {
 
 .slide:nth-child(1) {
     /* background-image: url(bilder/gruppbild1800x1200px.39879e23b2796e65d800.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100121.png);
+    background-image: url(bilder/vi.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -89,7 +89,8 @@ h1 {
 
 .slide:nth-child(2) {
     /* background-image: url(bilder/dirty1.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 105404.png);
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100121.png);
+
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -98,7 +99,7 @@ h1 {
 
 .slide:nth-child(3) {
     /* background-image: url(bilder/dirty2.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100202.png);
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 105404.png);
     
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -118,7 +119,7 @@ h1 {
 
 .slide:nth-child(5) {
     /* background-image: url(bilder/dirtyjacob.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100202.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -134,7 +135,7 @@ h1 {
 }
 .slide:nth-child(7) {
     /* background-image: url(bilder/dirtyjacob.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-image: url(bilder/Eller-jocke-i-afrika.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -142,15 +143,15 @@ h1 {
 }
 .slide:nth-child(8) {
     /* background-image: url(bilder/dirtyjacob.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-image: url(bilder/mmmm-kex.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: black;
 }
 .slide:nth-child(9) {
-    /* background-image: url(bilder/dirtyjacob.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+  
+    background-image: url(bilder/mmm-mat.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -158,66 +159,44 @@ h1 {
 }
 .slide:nth-child(10) {
     /* background-image: url(bilder/dirtyjacob.jpg); */
-    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-image: url(bilder/Mal-med-kvallen.png);
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: black;
 }
 
-/* @keyframes animate {
-    0% {
-        left: 0;
-    }
-    16% {
-        left: 0;
-    }
-    20% {
-        left: -100%;
-    }
-    36% {
-        left: -100%;
-    }
-    40% {
-        left: -200%;
-    }
-    56% {
-        left: -200%;
-    }
-    60% {
-        left: -300%;
-    }
-    76% {
-        left: -300%;
-    }
-    80% {
-        left: -400%;
-    }
-    96% {
-        left: -400%;
-    }
-    100% {
-        left: 0;
-    }
-} */
 @keyframes animate {
-    0% { left: 0%; }
-    10% { left: 0%; }
-    12% { left: -100%; }
-    22% { left: -100%; }
-    24% { left: -200%; }
-    34% { left: -200%; }
-    36% { left: -300%; }
-    46% { left: -300%; }
-    48% { left: -400%; }
-    58% { left: -400%; }
-    60% { left: -500%; }
-    70% { left: -500%; }
-    72% { left: -600%; }
-    82% { left: -600%; }
-    84% { left: -700%; }
-    94% { left: -700%; }
-    96% { left: -800%; }
-    100% { left: -800%; } /* Stays at last slide, then resets */
+    0%   { left: 0%; }
+    10%  { left: 0%; }
+
+    11%  { left: -100%; }
+    20%  { left: -100%; }
+
+    21%  { left: -200%; }
+    30%  { left: -200%; }
+
+    31%  { left: -300%; }
+    40%  { left: -300%; }
+
+    41%  { left: -400%; }
+    50%  { left: -400%; }
+
+    51%  { left: -500%; }
+    60%  { left: -500%; }
+
+    61%  { left: -600%; }
+    70%  { left: -600%; }
+
+    71%  { left: -700%; }
+    80%  { left: -700%; }
+
+    81%  { left: -800%; }
+    90%  { left: -800%; }
+
+    91%  { left: -900%; }
+    100% { left: -900%; }
 }
+
+
 
