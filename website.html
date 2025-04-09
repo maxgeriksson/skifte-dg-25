@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Snusk-Slider</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            // Check if the user is authorized
+            if (localStorage.getItem("authorized") !== "true") {
+                alert("Unauthorized access!");
+                window.location.href = "index.html";
+            }
+
+            function updateCountdown() {
+                const targetDate = new Date("May 2, 2025 08:00:00").getTime();
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = 
+                    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    document.getElementById("countdown").innerHTML = "EXPIRED";
+                }
+            }
+            function updateBottomCountdown() {
+                const targetDate = new Date("April 23, 2025 08:00:00").getTime();
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const countdownElem = document.getElementById("bottom-countdown");
+                if (countdownElem) {
+                    if (distance < 0) {
+                        countdownElem.innerHTML = "EXPIRED";
+                    } else {
+                        countdownElem.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                    }
+                }
+            }
+
+            setInterval(updateBottomCountdown, 1000);
+            const interval = setInterval(updateCountdown, 1000);
+
+        </script>
+    </head>
+    <body>
+        <div class="banner">
+            <h2>NI SKA TILL PATET HIMLEM!!: <span id="countdown">Loading ...</span></h2>
+            
+        </div>
+
+        <div class="bottom-banner">
+            <h3>Tema släpp om: <span id="bottom-countdown">Loading ...</span> !!!</h3>
+        </div>
+
+        <div class="container">
+            <div class="slider">
+                <div class="slide">
+                    <h1>Gorbel testar piercing</h1>
+                </div>
+                <div class="slide">
+                    <h1>Aj</h1>
+                </div>
+                <div class="slide">
+                    <h1>Innan eller efter det som skedde på örat toan?</h1>
+                    
+                </div>
+                <div class="slide">
+                    <h1>Innan såklart, detta smaka gott</h1>
+                    
+                </div>
+                <div class="slide">
+                    <h1>Lämna inte toyyan upplåst ...</h1>
+                </div>
+                <div class="slide">
+                    <h1>Lämna inte toyyan upplåst ...</h1>
+                </div>
+                <div class="slide">
+                    <h1>Lämna inte toyyan upplåst ...</h1>
+                </div>
+                <div class="slide">
+                    <h1>Lämna inte toyyan upplåst ...</h1>
+                </div>
+                <div class="slide">
+                    <h1>Lämna inte toyyan upplåst ...</h1>
+                </div>
+                <div class="slide">
+                    <h1>Lämna inte toyyan upplåst ...</h1>
+                </div>
+            </div>
+        </div>
+            
+    </body>
+
+</html>

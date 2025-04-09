@@ -1,0 +1,223 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner styles */
+.banner {
+    background-color: rgba(247, 3, 137, 0.6);
+    color: rgb(243, 210, 26);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    height: 60px;  /* Set a fixed height */
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    font-size: 2em; /* Adjust font size to fit better */
+    line-height: 60px; /* Vertically center text */
+    display: flex; /* Enable flexbox */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Place countdown on the left and button on the right */
+    padding: 10px 20px; /*Add some padding on the sides*/
+}
+
+.bottom-banner {
+    background-color: rgba(174, 179, 184, 0.6);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    height: 40px;
+    font-size: 1.2em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 1000%;
+    animation: animate 40s linear infinite;
+}
+
+.slide {
+    position: relative;
+    width: 10%;
+    float: left;
+    height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 5%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 2.5em;
+    width: 100%;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.slide {
+    background-size: cover;
+}
+
+.slide:nth-child(1) {
+    /* background-image: url(bilder/gruppbild1800x1200px.39879e23b2796e65d800.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100121.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+
+.slide:nth-child(2) {
+    /* background-image: url(bilder/dirty1.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 105404.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+
+.slide:nth-child(3) {
+    /* background-image: url(bilder/dirty2.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100202.png);
+    
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+
+.slide:nth-child(4) {
+    /* background-image: url(bilder/dirty3.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 102945.png);
+   
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+
+.slide:nth-child(5) {
+    /* background-image: url(bilder/dirtyjacob.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.slide:nth-child(6) {
+    /* background-image: url(bilder/dirtyjacob.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.slide:nth-child(7) {
+    /* background-image: url(bilder/dirtyjacob.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.slide:nth-child(8) {
+    /* background-image: url(bilder/dirtyjacob.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.slide:nth-child(9) {
+    /* background-image: url(bilder/dirtyjacob.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+.slide:nth-child(10) {
+    /* background-image: url(bilder/dirtyjacob.jpg); */
+    background-image: url(bilder/Skärmbild\ 2025-04-09\ 100326.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+}
+
+/* @keyframes animate {
+    0% {
+        left: 0;
+    }
+    16% {
+        left: 0;
+    }
+    20% {
+        left: -100%;
+    }
+    36% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    56% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    76% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    96% {
+        left: -400%;
+    }
+    100% {
+        left: 0;
+    }
+} */
+@keyframes animate {
+    0% { left: 0%; }
+    10% { left: 0%; }
+    12% { left: -100%; }
+    22% { left: -100%; }
+    24% { left: -200%; }
+    34% { left: -200%; }
+    36% { left: -300%; }
+    46% { left: -300%; }
+    48% { left: -400%; }
+    58% { left: -400%; }
+    60% { left: -500%; }
+    70% { left: -500%; }
+    72% { left: -600%; }
+    82% { left: -600%; }
+    84% { left: -700%; }
+    94% { left: -700%; }
+    96% { left: -800%; }
+    100% { left: -800%; } /* Stays at last slide, then resets */
+}
+
