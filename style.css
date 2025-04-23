@@ -24,11 +24,11 @@ body {
 }
 
 .bottom-banner {
-    background-color: rgba(174, 179, 184, 0.6);
+    background-color: rgba(143, 45, 163, 0.6);
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     height: 40px;
-    font-size: 1.2em;
+    font-size: 2em;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -58,6 +58,18 @@ body {
     width: 10%;
     float: left;
     height: 100vh;
+}
+
+.foreground-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Or 100% if your slider has a fixed height */
+    opacity: 1; /* Adjust transparency here */
+    z-index: 5; /* Higher than the slider but lower than banners if needed */
+    pointer-events: none; /* Makes sure the overlay doesn’t block clicks */
+    object-fit: cover; /* Keeps aspect ratio and fills */
 }
 
 h1 {
@@ -197,6 +209,4 @@ h1 {
     91%  { left: -900%; }
     100% { left: -900%; }
 }
-
-
 
